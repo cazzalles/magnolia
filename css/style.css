@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700|Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:700');
+
+body, .mdl-layout__drawer {
+    color: #ffea9b;
+    background-color: #661d39;
+}
+
+.mdl-layout__drawer {
+    border-right-color: #661d39;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: #ffea9b;
+    font-size: 120%;
+    transition: background-color 0.3s;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background-color: #500e27;
+}
+
+.text {
+    font-size: 150%;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.presentation {
+    font-size: 150%;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.link {
+    font-size: 130%;
+    color: #d82f70;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 15%;
+}
+
+.last {
+    margin-bottom: 15%;
+}
+
+.back {
+    font-size: 350%;
+    color: #942751;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 42%;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.mdl-button {
+    color: #ffea9b;
+    background-color: #942751;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    margin-top: 10%;
+
+}
+
+.logo {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.search {
+    color: #222222;
+    margin-left: 25%;
+}
+
+.ap {
+    width: 50%;
+    height: 50%;
+}
+
+.description p {
+    float: right;
+    max-width: 45%;
+}
+
+.title p {
+    float: right;
+    font-size: 180%;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.demo-list-three {
+  width: 100%;
+}
+
+.mdl-list__item-primary-content {
+    color: #ffea9b;
+}
+
+.demo-list-three .mdl-list__item .mdl-list__item-primary-content .mdl-list__item-text-body {
+    color: #c7bfa0;
+}
+
+.fotografia {
+    float: left;
+    margin-right: 16px;
+    height: 55px;
+    width: 55px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.contato {
+    padding-left: 6%;
+}
+
+.mdl-textfield .mdl-textfield__label {
+    color: #c7bfa0;
+}
+
+.demo-list-control {
+  width: 100%;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #ffea9b;
+}
