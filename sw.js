@@ -1,18 +1,6 @@
 
 const CACHE_NAME = 'magnolia-cache';
 
-//Install stage sets up the offline page in the cahche and opens a new cache
-self.addEventListener('install', function (event) {
-    var offlinePage = new Request('offline.html');
-    event.waitUntil(
-        fetch(offlinePage).then(function (response) {
-            return caches.open('pwabuilder-offline').then(function (cache) {
-                console.log('[PWA Builder] Cached offline page during Install' + response.url);
-                return cache.put(offlinePage, response);
-            });
-        }));
-});
-
 self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
@@ -25,11 +13,43 @@ self.addEventListener('install', function (event) {
                 '/magnolia/matricula.html',
                 '/magnolia/matricula_google.html',
                 '/magnolia/sobre.html',
-                '/magnolia/contato.html'
+                '/magnolia/contato.html',
+                'magnolia/img/mag-logo.png',
+                'magnolia/img/cinema.png',
+                'magnolia/img/educacao.png',
+                'magnolia/img/humilde.png',
+                'magnolia/img/icon.png',
+                'magnolia/img/literatura.png',
+                'magnolia/img/livia.png',
+                'magnolia/img/music.png',
+                'magnolia/img/pagano.png',
+                'magnolia/img/pintura.png',
+                'magnolia/img/producao.png',
+                'magnolia/img/sad.png',
+                'magnolia/img/teatro.png',
+                'magnolia/img/thalis.png',
+                'magnolia/css/style.css',
+                'magnolia/sw.js',
+                'magnolia/service.js'
             ])
         })
     )
 });
+
+
+
+//Install stage sets up the offline page in the cahche and opens a new cache
+self.addEventListener('install', function (event) {
+    var offlinePage = new Request('offline.html');
+    event.waitUntil(
+        fetch(offlinePage).then(function (response) {
+            return caches.open('pwabuilder-offline').then(function (cache) {
+                console.log('[PWA Builder] Cached offline page during Install' + response.url);
+                return cache.put(offlinePage, response);
+            });
+        }));
+});
+
 
 
 //If any fetch fails, it will show the offline page.
