@@ -1,4 +1,5 @@
-//This is the "Offline page" service worker
+
+const CACHE_NAME = 'magnolia-cache';
 
 //Install stage sets up the offline page in the cahche and opens a new cache
 self.addEventListener('install', function (event) {
@@ -11,6 +12,25 @@ self.addEventListener('install', function (event) {
             });
         }));
 });
+
+self.addEventListener('install', function (event) {
+    event.waitUntil(
+        caches.open(CACHE_NAME).then(function (cache) {
+            return cache.addAll([
+                '/magnolia/',
+                '/magnolia/index.html',
+                '/magnolia/cursos.html',
+                '/magnolia/professores.html',
+                '/magnolia/producao.html',
+                '/magnolia/matricula.html',
+                '/magnolia/matricula_google.html',
+                '/magnolia/sobre.html',
+                '/magnolia/contato.html'
+            ])
+        })
+    )
+});
+
 
 //If any fetch fails, it will show the offline page.
 //Maybe this should be limited to HTML documents?
