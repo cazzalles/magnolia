@@ -15,7 +15,7 @@
         <link rel="manifest" href="manifest.json">
     </head>
     <body>        
-        <img class="logo" src="img/mag-logo.png">
+        <img class="logo" src="img/mag-logo.png" alt="">
         <p class="presentation">
             Seja bem-vindo(a) à Grande Academia de Artes Magnolia.
         </p>
@@ -24,18 +24,6 @@
             ... ou matricule-se já.
         </button>
     </body>
-    <script>
-        //Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-        if (navigator.serviceWorker.controller) {
-            console.log('[PWA Builder] active service worker found, no need to register')
-        } else {
-            //Register the ServiceWorker
-            navigator.serviceWorker.register('sw.js', {
-                scope: './'
-            }).then(function (reg) {
-                console.log('Service worker has been registered for scope:' + reg.scope);
-            });
-        }  
-    </script>
+    <script type="text/javascript" src="service.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </html>
