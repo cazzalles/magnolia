@@ -1,0 +1,7 @@
+codigo externo,
+estilos no top scripts no rodapé,
+css num so arquivo, 
+link do que import,
+sem document.write, 
+sem manipulaçoes do dom desnecessarias,  
+sem escala de img no codigo
