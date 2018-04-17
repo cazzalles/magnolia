@@ -1,27 +1,30 @@
 //NEW
 //This is the "Offline copy of pages" wervice worker
 //Install stage sets up the index page (home page) in the cahche and opens a new cache
-self.addEventListener('install', function(event) {
-  var indexPage = new Request('index.html');
-  event.waitUntil(
-    fetch(indexPage).then(function(response) {
-      return caches.open('pwabuilder-offline').then(function(cache) {
-        console.log('[PWA Builder] Cached index page during Install'+ response.url);
-          return cache.addAll(['/magnolia/','/magnolia/index.html','/magnolia/cursos.html',
-                               '/magnolia/professores.html','/magnolia/producao.html',
-                               '/magnolia/matricula.html','/magnolia/matricula_google.html',
-                               '/magnolia/sobre.html','/magnolia/contato.html',
-                               '/magnolia/img/mag-logo.png','/magnolia/img/cinema.jpg',
-                               '/magnolia/img/educacao.jpeg','/magnolia/img/humilde.png',
-                               '/magnolia/img/icon.png','/magnolia/img/literatura.jgg',
-                               '/magnolia/img/livia.jpg','/magnolia/img/music.jpg',
-                               '/magnolia/img/pagano.jpg','/magnolia/img/pintura.jpg',
-                               '/magnolia/img/producao.jpg','/magnolia/img/sad.png',
-                               '/magnolia/img/teatro.jpg','/magnolia/img/thalis.jpg',
-                               '/magnolia/css/style.css','/magnolia/sw.js'
-                                ]);
-  }));
+self.addEventListener('install', function (event) {
+    var indexPage = new Request('index.html');
+    event.waitUntil(
+        fetch(indexPage).then(function (response) {
+            caches.open('pwabuilder-offline').then(function (cache) {
+                console.log('[PWA Builder] Cached index page during Install' + response.url);
+                return cache.addAll(['/magnolia/', '/magnolia/index.html', '/magnolia/cursos.html',
+                    '/magnolia/professores.html', '/magnolia/producao.html',
+                    '/magnolia/matricula.html', '/magnolia/matricula_google.html',
+                    '/magnolia/sobre.html', '/magnolia/contato.html',
+                    '/magnolia/img/mag-logo.png', '/magnolia/img/cinema.jpg',
+                    '/magnolia/img/educacao.jpeg', '/magnolia/img/humilde.png',
+                    '/magnolia/img/icon.png', '/magnolia/img/literatura.jgg',
+                    '/magnolia/img/livia.jpg', '/magnolia/img/music.jpg',
+                    '/magnolia/img/pagano.jpg', '/magnolia/img/pintura.jpg',
+                    '/magnolia/img/producao.jpg', '/magnolia/img/sad.png',
+                    '/magnolia/img/teatro.jpg', '/magnolia/img/thalis.jpg',
+                    '/magnolia/css/style.css', '/magnolia/sw.js'
+                ]);
+            });
+        })
+    );
 });
+
 
 //If any fetch fails, it will look for the request in the cache and serve it from there first
 self.addEventListener('fetch', function(event) {
