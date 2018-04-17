@@ -15,7 +15,7 @@ self.addEventListener('install', function (event) {
                     '/magnolia/img/educacao.jpeg', '/magnolia/img/humilde.png',
                     '/magnolia/img/icon.png', '/magnolia/img/literatura.jpg',
                     '/magnolia/img/livia.jpg', '/magnolia/img/music.jpg',
-                    '/magnolia/image/icons/ico.png',
+                    '/magnolia/images/icons/ico.png',
                     '/magnolia/img/pagano.jpg', '/magnolia/img/pintura.jpg',
                     '/magnolia/img/producao.jpg', '/magnolia/img/sad.png',
                     '/magnolia/img/teatro.jpg', '/magnolia/img/thalis.jpg',
