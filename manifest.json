@@ -1,14 +1,14 @@
 {
-    "name"; : "Grande Academia de Artes Magnolia",
-    "short_name"; : "Magnolia",
-    "theme_color"; : "#a20668",
-    "background_color"; : "#7c0029",
-    "display"; : "fullscreen",
-    "Scope"; : "/",
-    "start_url"; : "https://ferreiradavi.github.io/magnolia/index.html",
-    "lang"; : "",
-    "orientation"; : "undefined",
-    'icons' : [
+    "name" : "Grande Academia de Artes Magnolia",
+    "short_name" : "Magnolia",
+    "theme_color" : "#a20668",
+    "background_color" : "#7c0029",
+    "display" : "fullscreen",
+    "Scope" : "/",
+    "start_url" : "https://ferreiradavi.github.io/magnolia/index.html",
+    "lang" : "",
+    "orientation" : "undefined",
+    "icons" : [
         {
             "src": "https://ferreiradavi.github.io/images/icons/icon-72x72.png",
             "sizes": "72x72"
