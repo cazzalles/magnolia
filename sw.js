@@ -1,5 +1,4 @@
-
-const CACHE_NAME = 'magnolia-cache';
+const CACHE_NAME = 'magnolia';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
@@ -57,7 +56,3 @@ self.addEventListener('fetch', function (event) {
         })
     );
 });
-
-
-
-
