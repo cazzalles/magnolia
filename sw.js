@@ -19,7 +19,7 @@ self.addEventListener('install', function(event) {
                                '/magnolia/img/producao.jpg','/magnolia/img/sad.png',
                                '/magnolia/img/teatro.jpg','/magnolia/img/thalis.jpg',
                                '/magnolia/css/style.css','/magnolia/sw.js'
-          );
+                                ]);
   }));
 });
 
