@@ -29,8 +29,7 @@ self.addEventListener('install', function (event) {
                 '/magnolia/img/teatro.jpg',
                 '/magnolia/img/thalis.jpg',
                 '/magnolia/css/style.css',
-                '/magnolia/sw.js',
-                '/magnolia/service.js'
+                '/magnolia/sw.js'
             ])
         })
     )
