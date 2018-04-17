@@ -10,6 +10,10 @@
     "orientation" : "undefined",
     "icons" : [
         {
+            "src": "https://ferreiradavi.github.io/images/icons/ico.png",
+            "sizes": "50x50"
+        },
+        {
             "src": "https://ferreiradavi.github.io/images/icons/icon-72x72.png",
             "sizes": "72x72"
         },
