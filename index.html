@@ -23,7 +23,15 @@
         <button class="mdl-button mdl-js-button" onclick="location.href='matricula.html';">
             ... ou matricule-se já.
         </button>
-        <script async src="service.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/central-controle-robos/sw.js').then(function () {
+                    console.log('service worker registrado');
+                }).catch(function (err) {
+                    console.warn(err)
+                })
+            }
+        </script>
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     </body>
 </html>
